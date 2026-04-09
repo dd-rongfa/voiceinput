@@ -1,0 +1,8 @@
+﻿# Files containing raw speech text (privacy)
+data/retry_chains.csv
+data/retry_clusters.csv
+data/high_latency_march.csv
+data/activity_sessions.csv
+data/exact_repeat_failures.csv
+
+__pycache__/

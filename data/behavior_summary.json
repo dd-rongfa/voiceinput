@@ -1,0 +1,538 @@
+{
+  "generated_at": "2026-04-08T19:57:31",
+  "scope": "March 2026 is the primary reliable period for behavioral analysis.",
+  "event_counts": {
+    "asr_received": 40862,
+    "ui_mark_error": 844,
+    "ui_committed": 18644,
+    "ui_discarded": 9403,
+    "sys_filtered": 1916,
+    "ui_overridden": 349,
+    "ui_marked_error": 21,
+    "asr_error": 3,
+    "ui_recovered": 5,
+    "ai_correction": 47,
+    "ui_archived": 113,
+    "ai_assistant": 28,
+    "clipboard_received": 744,
+    "ai_corrected": 153,
+    "ai_correction_skipped": 10,
+    "ui_recover": 54
+  },
+  "session_gap_seconds_used": 90,
+  "session_gap_sensitivity": [
+    {
+      "gap_seconds": 60,
+      "session_count": 1997,
+      "avg_utterances_per_session": 10.4
+    },
+    {
+      "gap_seconds": 90,
+      "session_count": 1440,
+      "avg_utterances_per_session": 14.4
+    },
+    {
+      "gap_seconds": 120,
+      "session_count": 1114,
+      "avg_utterances_per_session": 18.6
+    },
+    {
+      "gap_seconds": 180,
+      "session_count": 698,
+      "avg_utterances_per_session": 29.7
+    },
+    {
+      "gap_seconds": 240,
+      "session_count": 481,
+      "avg_utterances_per_session": 43.1
+    },
+    {
+      "gap_seconds": 300,
+      "session_count": 368,
+      "avg_utterances_per_session": 56.4
+    }
+  ],
+  "unknown_fate_analysis": {
+    "202601": {
+      "total_unknown": 4616,
+      "gap_6_to_15s": 1480,
+      "inferred_overwrite_within_6s": 1824,
+      "short_lte4": 312,
+      "no_close_successor": 1312,
+      "very_short_lte2": 679
+    },
+    "202602": {
+      "total_unknown": 2759,
+      "gap_6_to_15s": 1008,
+      "very_short_lte2": 150,
+      "no_close_successor": 802,
+      "inferred_overwrite_within_6s": 949,
+      "short_lte4": 246
+    },
+    "202603": {
+      "total_unknown": 4988,
+      "inferred_overwrite_within_6s": 1966,
+      "gap_6_to_15s": 1390,
+      "short_lte4": 428,
+      "no_close_successor": 1632,
+      "very_short_lte2": 1213
+    }
+  },
+  "discard_breakdown": [
+    {
+      "month": "202601",
+      "total_discards": 1257,
+      "active_overwrite_or_gesture": 10,
+      "passive_timeout": 1247,
+      "other_discard": 0
+    },
+    {
+      "month": "202603",
+      "total_discards": 5942,
+      "active_overwrite_or_gesture": 3835,
+      "passive_timeout": 1763,
+      "other_discard": 344
+    },
+    {
+      "month": "202604",
+      "total_discards": 1902,
+      "active_overwrite_or_gesture": 1126,
+      "passive_timeout": 768,
+      "other_discard": 8
+    }
+  ],
+  "corrected_funnel": [
+    {
+      "month": "202601",
+      "total": 7604,
+      "committed": 1107,
+      "speech_overwrite_explicit": 0,
+      "inferred_overwrite": 1824,
+      "discarded": 1257,
+      "inferred_discard": 2792,
+      "filtered": 422,
+      "mark_error": 202,
+      "total_overwrite_pct": 24.0,
+      "total_discard_pct": 53.2,
+      "committed_chars": 14866,
+      "total_chars": 195728
+    },
+    {
+      "month": "202602",
+      "total": 4042,
+      "committed": 1035,
+      "speech_overwrite_explicit": 0,
+      "inferred_overwrite": 949,
+      "discarded": 0,
+      "inferred_discard": 1810,
+      "filtered": 248,
+      "mark_error": 0,
+      "total_overwrite_pct": 23.5,
+      "total_discard_pct": 44.8,
+      "committed_chars": 14175,
+      "total_chars": 93188
+    },
+    {
+      "month": "202603",
+      "total": 21772,
+      "committed": 10129,
+      "speech_overwrite_explicit": 2425,
+      "inferred_overwrite": 1966,
+      "discarded": 3517,
+      "inferred_discard": 3022,
+      "filtered": 353,
+      "mark_error": 360,
+      "total_overwrite_pct": 20.2,
+      "total_discard_pct": 30.0,
+      "committed_chars": 118526,
+      "total_chars": 258639
+    },
+    {
+      "month": "202604",
+      "total": 8630,
+      "committed": 5816,
+      "speech_overwrite_explicit": 589,
+      "inferred_overwrite": 9,
+      "discarded": 1313,
+      "inferred_discard": 6,
+      "filtered": 893,
+      "mark_error": 4,
+      "total_overwrite_pct": 6.9,
+      "total_discard_pct": 15.3,
+      "committed_chars": 73948,
+      "total_chars": 103577
+    }
+  ],
+  "latency_by_duration": [
+    {
+      "duration_bucket": "0-1s",
+      "count": 9,
+      "avg_latency_ms": 85.0,
+      "p50_latency_ms": 84.0,
+      "p95_latency_ms": 93.0,
+      "p99_latency_ms": 94.0,
+      "avg_content_len": 2.6
+    },
+    {
+      "duration_bucket": "1-2s",
+      "count": 6214,
+      "avg_latency_ms": 130.0,
+      "p50_latency_ms": 105.0,
+      "p95_latency_ms": 136.0,
+      "p99_latency_ms": 1722.0,
+      "avg_content_len": 4.2
+    },
+    {
+      "duration_bucket": "2-3s",
+      "count": 6859,
+      "avg_latency_ms": 159.0,
+      "p50_latency_ms": 142.0,
+      "p95_latency_ms": 177.0,
+      "p99_latency_ms": 386.0,
+      "avg_content_len": 8.3
+    },
+    {
+      "duration_bucket": "3-5s",
+      "count": 5980,
+      "avg_latency_ms": 219.0,
+      "p50_latency_ms": 198.0,
+      "p95_latency_ms": 263.0,
+      "p99_latency_ms": 556.0,
+      "avg_content_len": 14.7
+    },
+    {
+      "duration_bucket": "5-10s",
+      "count": 1886,
+      "avg_latency_ms": 386.0,
+      "p50_latency_ms": 314.0,
+      "p95_latency_ms": 487.0,
+      "p99_latency_ms": 2940.0,
+      "avg_content_len": 26.3
+    },
+    {
+      "duration_bucket": "10-20s",
+      "count": 323,
+      "avg_latency_ms": 778.0,
+      "p50_latency_ms": 641.0,
+      "p95_latency_ms": 1043.0,
+      "p99_latency_ms": 4317.0,
+      "avg_content_len": 58.0
+    },
+    {
+      "duration_bucket": "20+s",
+      "count": 148,
+      "avg_latency_ms": 1684.0,
+      "p50_latency_ms": 1596.0,
+      "p95_latency_ms": 4537.0,
+      "p99_latency_ms": 7254.0,
+      "avg_content_len": 125.8
+    }
+  ],
+  "filter_gap_analysis": {
+    "total_gap_days": 18,
+    "gap_dates": [
+      "20260120",
+      "20260226",
+      "20260305",
+      "20260311",
+      "20260313",
+      "20260314",
+      "20260315",
+      "20260316",
+      "20260317",
+      "20260318",
+      "20260319",
+      "20260320",
+      "20260321",
+      "20260322",
+      "20260323",
+      "20260324",
+      "20260328",
+      "20260404"
+    ],
+    "note": "Filter config was gradually added. Mar 5-28 had zero filtering (17 gap days). Before Mar 29, filter logged 'no_reason'. After Mar 29, proper reasons (blocklist_word, pure_punctuation, too_short) appear."
+  },
+  "march": {
+    "utterances": 21772,
+    "latency_ms": {
+      "month": "202603",
+      "sample_count": 21419,
+      "mean_latency_ms": 207.0,
+      "p50_latency_ms": 149.0,
+      "p95_latency_ms": 389.0,
+      "p99_latency_ms": 1731.4
+    },
+    "explicit_retry_chains": {
+      "count": 279,
+      "note": "replacement_filename only available from 2026-03-28 onwards, so chains cover ~7 days only.",
+      "chains_ge_3": 101,
+      "all_uncommitted": 164,
+      "max_chain_len": 11
+    },
+    "similarity_retry_clusters": {
+      "count": 467,
+      "all_uncommitted": 287,
+      "exact_repeat_failures": 140,
+      "clusters_ge_3": 39
+    },
+    "activity_sessions": {
+      "count": 1440,
+      "active_input": 532,
+      "retry_heavy_input": 254,
+      "passive_capture_candidate": 138,
+      "passive_capture_utterances": 4818
+    },
+    "text_length_fate": [
+      {
+        "text_len_bin": "01_1to4",
+        "asr_count": 4961,
+        "committed": 1110,
+        "speech_overwrite": 465,
+        "discarded": 798,
+        "filtered": 353,
+        "mark_error": 85,
+        "unknown": 2150,
+        "commit_rate": 0.224
+      },
+      {
+        "text_len_bin": "02_5to8",
+        "asr_count": 4921,
+        "committed": 2564,
+        "speech_overwrite": 624,
+        "discarded": 803,
+        "filtered": 0,
+        "mark_error": 110,
+        "unknown": 820,
+        "commit_rate": 0.521
+      },
+      {
+        "text_len_bin": "03_9to16",
+        "asr_count": 6859,
+        "committed": 4321,
+        "speech_overwrite": 634,
+        "discarded": 853,
+        "filtered": 0,
+        "mark_error": 104,
+        "unknown": 947,
+        "commit_rate": 0.63
+      },
+      {
+        "text_len_bin": "04_17to32",
+        "asr_count": 3126,
+        "committed": 1780,
+        "speech_overwrite": 338,
+        "discarded": 469,
+        "filtered": 0,
+        "mark_error": 35,
+        "unknown": 504,
+        "commit_rate": 0.569
+      },
+      {
+        "text_len_bin": "05_33plus",
+        "asr_count": 874,
+        "committed": 141,
+        "speech_overwrite": 225,
+        "discarded": 291,
+        "filtered": 0,
+        "mark_error": 8,
+        "unknown": 209,
+        "commit_rate": 0.161
+      }
+    ],
+    "top_unresolved_repeat_examples": [
+      {
+        "date": "20260312",
+        "app_name": "unknown",
+        "utterance_count": 5,
+        "final_fate": "speech_overwrite",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "O | O | O | O | O"
+      },
+      {
+        "date": "20260317",
+        "app_name": "unknown",
+        "utterance_count": 5,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260318",
+        "app_name": "unknown",
+        "utterance_count": 4,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Yeah. | Yeah. | Yeah. | Yeah."
+      },
+      {
+        "date": "20260319",
+        "app_name": "unknown",
+        "utterance_count": 4,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260322",
+        "app_name": "python.exe",
+        "utterance_count": 4,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260312",
+        "app_name": "unknown",
+        "utterance_count": 3,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "AD | AD | Ad"
+      },
+      {
+        "date": "20260319",
+        "app_name": "chrome.exe",
+        "utterance_count": 3,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260320",
+        "app_name": "Obsidian.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260321",
+        "app_name": "chrome.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260322",
+        "app_name": "chrome.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260323",
+        "app_name": "Code.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260323",
+        "app_name": "Code.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260323",
+        "app_name": "chrome.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260323",
+        "app_name": "python.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260324",
+        "app_name": "chrome.exe",
+        "utterance_count": 3,
+        "final_fate": "unknown",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay. | Okay. | Okay."
+      },
+      {
+        "date": "20260329",
+        "app_name": "Code.exe",
+        "utterance_count": 3,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "可以增加这个字段。 | 可以增加这个字段。 | 可以增加这个字段。"
+      },
+      {
+        "date": "20260331",
+        "app_name": "python.exe",
+        "utterance_count": 3,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "打开抖音。 | 打开抖音。 | 打开抖音。"
+      },
+      {
+        "date": "20260312",
+        "app_name": "unknown",
+        "utterance_count": 2,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay | Okay"
+      },
+      {
+        "date": "20260312",
+        "app_name": "unknown",
+        "utterance_count": 2,
+        "final_fate": "discarded",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "3月12号。 | 3月12号。"
+      },
+      {
+        "date": "20260312",
+        "app_name": "unknown",
+        "utterance_count": 2,
+        "final_fate": "speech_overwrite",
+        "exact_repeat_chain": 1,
+        "median_similarity": 1.0,
+        "texts_preview": "Okay | Okay"
+      }
+    ]
+  },
+  "notes": [
+    "replacement_filename only exists from 2026-03-28 onwards — explicit retry chain counts only cover ~7 days.",
+    "Inferred overwrite uses 6s threshold, validated against 717 real speech_overwrite events (P90=4.9s, matching 5s draft_timeout).",
+    "Remaining unknown fate items (14.1% in March) may include: early-version filter drops without logging, program restarts, or timeout discards without events.",
+    "Session gap defaults to 90s; sensitivity table included for 60-300s.",
+    "ASR latency (asr_time_cost) measures the time from VAD end (audio dispatch) to ASR result returned. For local SenseVoice, queue_wait ≈ 0, so total_pipeline_time ≈ asr_time_cost. This does NOT include the audio duration itself.",
+    "Latency scales linearly with audio duration: 1-2s audio→130ms, 10-20s→778ms, 20+s→1684ms. March P99 spike is driven by long ambient recordings hitting the 30s cap.",
+    "Text length uses content length (punctuation stripped). ASR models emit trailing punctuation that inflates raw text_len.",
+    "Filter config was gradually added: Mar 5-28 had ZERO filtering (config likely lost). 879 instances of pure '.' were not intercepted. Proper blocklist/punctuation/too_short filters only reliable from Mar 29.",
+    "draft_session_id only becomes reliable in late March, so early-month retry chains depend more on timestamps and text similarity.",
+    "passive_capture_candidate is a heuristic label: long activity span with very low commit density suggests ambient audio or monitoring rather than active dictation.",
+    "similarity_retry_clusters are local diagnostics and should not be published as-is because they retain text previews."
+  ]
+}

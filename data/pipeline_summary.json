@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-08T19:42:16",
+  "total_lifecycles": 41989,
+  "asr_event_lifecycles": 40775,
+  "action_only_lifecycles": 1214,
+  "audio_files": 45349,
+  "matched_audio": 41699,
+  "audio_only": 3650,
+  "jsonl_only": 290,
+  "clipboard_sessions": 723,
+  "voice_text_len_threshold": 500,
+  "test_pattern_regex_count": 11
+}

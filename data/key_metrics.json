@@ -1,0 +1,90 @@
+{
+  "q1": {
+    "tracked_voices": 33420,
+    "asr_received": 33093,
+    "committed": 12271,
+    "audio_files": 35495,
+    "audio_hours": 43.9,
+    "resume_labels": {
+      "asr_received": "33,100+",
+      "committed": "12,300+",
+      "audio_files": "35,500+"
+    }
+  },
+  "march": {
+    "tracked_voices": 21774,
+    "asr_received": 21447,
+    "committed": 10129,
+    "speech_overwrite": 2425,
+    "filtered": 353,
+    "mark_error": 360,
+    "cross_app": 43,
+    "commit_rate_pct": 46.5,
+    "speech_overwrite_pct": 11.1,
+    "filtered_pct": 1.6,
+    "resume_labels": {
+      "tracked_voices": "21,800+",
+      "committed": "10,100+"
+    }
+  },
+  "march_behavior": {
+    "activity_sessions": 1440,
+    "active_input_sessions": 532,
+    "retry_heavy_sessions": 254,
+    "passive_capture_sessions": 138,
+    "passive_capture_utterances": 4818,
+    "explicit_retry_chains": 279,
+    "max_retry_chain_len": 11,
+    "similarity_retry_clusters": 467,
+    "exact_repeat_failures": 140,
+    "latency_p50_ms": 149.0,
+    "latency_p95_ms": 389.0,
+    "latency_p99_ms": 1731.4
+  },
+  "evaluation": {
+    "dataset_utterances": 23846,
+    "dataset_audio_hours": 30.5,
+    "audio_files": 45537,
+    "audio_size_mb": 509,
+    "gt_labeled": 23043,
+    "gt_valid": 23007,
+    "gt_sources": {
+      "ai_deepseek": 15315,
+      "auto_minor_diff": 4445,
+      "auto_agree": 1175,
+      "manual_and_model": 2108
+    },
+    "ai_label_kappa": 0.804,
+    "models": {
+      "xunfei_file":  {"cer": 0.0509, "accuracy": 0.719, "errors": 6457, "latency_p50_ms": 9095},
+      "paraformer":   {"cer": 0.0555, "accuracy": 0.729, "errors": 6245, "latency_p50_ms": 170},
+      "qwen3_asr":    {"cer": 0.0559, "accuracy": 0.735, "errors": 6098, "latency_p50_ms": 270},
+      "funasr_nano":  {"cer": 0.0564, "accuracy": 0.769, "errors": 5324, "latency_p50_ms": 217},
+      "sensevoice":   {"cer": 0.0609, "accuracy": 0.674, "errors": 7495, "latency_p50_ms": null}
+    },
+    "error_classification": {
+      "total_errors": 31619,
+      "homophone": 5236,
+      "substitution": 9285,
+      "insertion": 5422,
+      "deletion": 2965,
+      "mixed": 8711
+    },
+    "top_homophone_pairs": ["他↔它(ta) 653", "板→版(ban) 252", "实→时(shi) 194"],
+    "cer_by_fate": {
+      "committed": 0.0369,
+      "mark_error": 0.1138,
+      "overwrite": 0.1058,
+      "active_discard": 0.1029
+    },
+    "resume_labels": {
+      "dataset": "23,800+条 / 30.5小时",
+      "models": "5模型横评",
+      "gt_labeled": "23,000+条标注",
+      "best_cer": "5.09%",
+      "error_types": "31,600+条错误分类"
+    }
+  },
+  "recommended_resume_sentence": "基于 2026 年第一季度 33,100+ 次真实语音识别与 12,300+ 次成功注入日志，构建以单条语音为原子单位的全链路评测方法，覆盖语音重说链检测、输入会话状态识别、ASR 延迟分位数分析（P50=149ms）等维度，量化从语音采集到文本注入的端到端质量。",
+  "recommended_evaluation_sentence": "构建 23,800+ 条 / 30.5 小时真实语音评测数据集，完成 5 模型（SenseVoice / FunASR-Nano / Paraformer / Qwen3-ASR / 讯飞）横向对比，AI辅助标注 15,300+ 条（κ=0.80），最优模型 CER 5.09%；错误类型聚类分析覆盖同音替换、多字少字、混合错误等 31,600+ 条错误记录，定位各模型差异化弱点。"
+}

@@ -1,0 +1,5 @@
+﻿month,audio_files,tracked_voices,asr_received,action_only,committed,speech_overwrite,discarded,filtered,mark_error,unknown,test_pattern,cross_app,audio_hours,mean_duration_sec,median_duration_sec,mean_text_len,median_text_len,mean_asr_latency_ms,mean_rtf
+202601,7604,7604,7604,0,1107,0,1257,422,202,4616,288,0,16.18,8.55,4.22,28.58,12.0,116.0,0.023
+202602,4042,4042,4042,0,1035,0,0,248,0,2759,147,0,8.35,7.44,4.32,25.72,13.0,138.1,0.03
+202603,23849,21774,21447,327,10129,2425,3519,353,360,4988,1031,43,19.4,3.26,2.59,13.52,10.0,207.0,0.068
+202604,9854,8569,7682,887,5787,575,1300,887,4,16,157,8,7.5,3.52,2.98,13.52,11,173.6,0.052

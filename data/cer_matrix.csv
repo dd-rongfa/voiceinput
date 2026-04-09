@@ -1,0 +1,6 @@
+,sensevoice,funasr_nano,paraformer,qwen3_asr,xunfei_file
+sensevoice,,0.0878,0.0814,0.0871,0.0892
+funasr_nano,0.0878,,0.0751,0.0748,0.0811
+paraformer,0.0814,0.0751,,0.0738,0.0834
+qwen3_asr,0.0871,0.0748,0.0738,,0.0787
+xunfei_file,0.0892,0.0811,0.0834,0.0787,

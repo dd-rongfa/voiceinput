@@ -1,0 +1,5 @@
+﻿month,total,committed,speech_overwrite_explicit,inferred_overwrite,discarded,inferred_discard,filtered,mark_error,total_overwrite_pct,total_discard_pct,committed_chars,total_chars
+202601,7604,1107,0,1824,1257,2792,422,202,24.0,53.2,14866,195728
+202602,4042,1035,0,949,0,1810,248,0,23.5,44.8,14175,93188
+202603,21772,10129,2425,1966,3517,3022,353,360,20.2,30.0,118526,258639
+202604,8630,5816,589,9,1313,6,893,4,6.9,15.3,73948,103577

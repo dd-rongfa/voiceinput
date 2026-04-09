@@ -1,0 +1,11 @@
+﻿app_name,app_category,committed_count,share_pct,mean_text_len,cross_app_count,test_pattern_count
+Code.exe,IDE/Development,7714,42.72,13.25,14,150
+chrome.exe,Browser/Research,5933,32.86,14.31,14,48
+unknown,Unknown/Early Version,3356,18.58,14.34,0,112
+Obsidian.exe,Note-taking,989,5.48,9.51,22,79
+Weixin.exe,Communication,27,0.15,12.41,0,0
+msedge.exe,Browser/Research,25,0.14,12.56,0,3
+python.exe,IDE/Development,6,0.03,12.5,0,4
+Feishu.exe,Communication,4,0.02,10.25,0,0
+explorer.exe,System,3,0.02,9.33,0,1
+WXWork.exe,Communication,1,0.01,13.0,0,1
